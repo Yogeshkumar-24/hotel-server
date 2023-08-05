@@ -16,7 +16,7 @@ app.listen(port,()=> {
 })
 
 
-app.use(cors())
+app.use(cors()) 
 const  connect = async() => {
     try{
         mongoose.set('strictQuery',false)
@@ -24,7 +24,7 @@ const  connect = async() => {
 
             console.log("Connected to MongoDb!")
         }).catch(err=>console.log("Error"))
-    } catch(error){
+    } catch(error){  
         throw error;
     }
 };
